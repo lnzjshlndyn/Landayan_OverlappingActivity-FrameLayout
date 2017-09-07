@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.overlappingactivity.MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:src="@drawable/yellowshark"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fourshark"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:onClick=""/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Baby Shark"
+        android:textSize="50dp"
+        android:layout_marginTop="350dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Doo Doo Doo Doo Doo Doo"
+        android:textSize="30dp"
+        android:layout_marginTop="400dp"
+        android:visibility="gone"/>
+
+</FrameLayout>
